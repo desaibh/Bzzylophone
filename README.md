@@ -1,7 +1,7 @@
 # Project Title
 
 <b>BZZylophone</b>
-![Make Music!](media/images/xylophone.png)
+![Make Music!](https://github.com/desaibh/Bzzylophone/blob/master/media/images/Xylophone.png)
 
 ## Built With
 
