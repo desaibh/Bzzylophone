@@ -169,6 +169,10 @@ function playSheetMusic(e) {
   let len = sheet.length;
   i=0;
   j=0;
+  var gridNode = document.querySelector("#grid");
+  while (gridNode.firstChild) {
+      gridNode.removeChild(gridNode.firstChild);
+  }
   drawNoteLoop(sheet, sheetType, lyrics, 0, 0, 0);
   playNoteLoop(sheet, sheetType, speed, len);
 }

@@ -33,16 +33,17 @@ h2 {
   color: #452408;
   padding: 0;
   margin: 0;
-}
+ }
+
 .xylophone {
-   position: relative;
-   display: inline-block;
-   width: 48%;
-   height: 400px;
-   float: left;
-   z-index: 1;
-   margin: 0 auto;
-   align: center;
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  height: 400px;
+  float: left;
+  z-index: 1;
+  margin: 0 auto;
+  align: center;
 }
 .railup, .raildown {
   height: 35px;
@@ -79,9 +80,6 @@ h2 {
   box-shadow: 10px 10px 5px rgba(136, 136, 136, .5);
   cursor: url("./media/images/cursor.cur"), pointer;
   transition: all 0.07s;
-}
-.clearfix {
-  clear:both;
 }
 .A {
   background: #1c7ade;
@@ -193,6 +191,9 @@ h2 {
   border: 5px yellow solid;
   box shadow: 0 0 10px yellow;
 }
+.clearfix {
+  clear:both;
+}
 .sheetmusic {
   display: inline-block:block;
   width: 47%;
@@ -293,9 +294,3 @@ h2 {
     border: none;
   }
 }
-
-/* .A {
-@@ -174,3 +190,106 @@ h1 {
-   border: 5px yellow solid;
-   box shadow: 0 0 10px yellow;
- }*/
