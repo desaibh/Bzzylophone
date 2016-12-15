@@ -30,10 +30,10 @@ function removeTransform(e) {
 }
 
 const notes = document.querySelectorAll('.note');
-notes.forEach((note) => {
+for (note of notes) {
   note.addEventListener('click', clickHandler);
   note.addEventListener('transitionend', removeTransform);
-});
+};
 
 
 // Sheet Music
