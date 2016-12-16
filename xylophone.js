@@ -10,13 +10,13 @@ function playSound(keyCode) {
 }
 
 function keydownHandler(e) {
-  e = e || window.event
+  e = e || window.event;
   let keyCodeVal = e.keyCode;
   playSound(keyCodeVal);
 }
 
 function clickHandler(e) {
-  e = e || window.event
+  e = e || window.event;
   let keyCodeVal;
   if (e.target.className.includes("note")) {
     keyCodeVal = e.toElement.attributes[0].value;
@@ -27,7 +27,7 @@ function clickHandler(e) {
 }
 
 function removeTransform(e) {
-  e = e || window.event
+  e = e || window.event;
   if (e.propertyName !== 'transform') return;
   this.classList.remove('play');
 }

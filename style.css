@@ -189,13 +189,13 @@ h2 {
 .play {
   transform: scale(1.1);
   border: 5px yellow solid;
-  box shadow: 0 0 10px yellow;
+  box-shadow: 0 0 10px yellow;
 }
 .clearfix {
   clear:both;
 }
 .sheetmusic {
-  display: inline-block:block;
+  display: inline-block;
   width: 47%;
   float: right;
   min-height: 400px;
