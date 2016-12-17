@@ -10,7 +10,7 @@ function playSound(keyCode) {
 }
 
 function keydownHandler(e) {
-  let keyCodeVal = e.keyCode;
+  let keyCodeVal = e.which || e.keyCode;
   playSound(keyCodeVal);
 }
 
