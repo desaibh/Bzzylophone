@@ -53,9 +53,9 @@ const sheetMusic = [
   },
   {
     song: 'Itsy Bitsy Spider',
-    sheet: 'DCCCDEE EDCDEC PEEFG GFEFGE PCDEE DCDEC PDCCCDEEEDCDEC',
+    sheet: 'DCCCDEE EDCDEC PEEFG GFEFGE PCDEE DCDEC PDCCCDEE EDCDEC',
     speed: '24',
-    type:  '0qhqhqhh qhqhqh phhqh hhqhqh phqhh hqhqh pqhqhqqhqhqhqhqh',
+    type:  '0qhqhqhh qhqhqh phhqh hhqhqh phqhh hqhqh pqhqhqqh qhqhqhqh',
     lyrics: [
       'The Itsy-Bitsy Spider',
       'Climbed Up the Water Spout.',
@@ -63,7 +63,8 @@ const sheetMusic = [
       'And Washed the Spider Out.',
       'Out Came the Sun',
       'And Dried Up All the Rain.',
-      'The Itsy-Bitsy Spider Climed Up the Spout Again. '
+      'The Itsy-Bitsy Spider',
+      'Climbed Up the Spout Again. '
     ]
   },
   {
