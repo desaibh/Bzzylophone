@@ -302,7 +302,7 @@ button {
   float: none;
   padding-bottom: 80px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px) {
   h1 {
     font-size: 3.5em;
   }
