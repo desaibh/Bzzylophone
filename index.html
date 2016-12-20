@@ -8,115 +8,122 @@
   </head>
   <body>
     <h1>Bzzylophone</h1>
-    <div class="xylophone">
-
-      <div class="raildown"></div>
-      <div data-key="67" class="C note">
-        <p>C</p>
-        <p class="soflege">DO</p>
+    <div id="makemusic">
+      <div class="xylophone">
+        <div class="raildown"></div>
+        <div data-key="67" class="C note">
+          <p>C</p>
+          <p class="soflege">DO</p>
+        </div>
+        <div data-key="68" class="D note">
+          <p>D</p>
+          <p class="soflege">RE</p>
+        </div>
+        <div data-key="69" class="E note">
+          <p>E</p>
+          <p class="soflege">MI</p>
+        </div>
+        <div data-key="70" class="F note">
+          <p>F</p>
+          <p class="soflege">FA</p>
+        </div>
+        <div data-key="71" class="G note">
+          <p>G</p>
+          <p class="soflege">SO</p>
+        </div>
+        <div data-key="65" class="A note">
+          <p>A</p>
+          <p class="soflege">LA</p>
+        </div>
+        <div data-key="66" class="B note">
+          <p>B</p>
+          <p class="soflege">TI</p>
+        </div>
+        <div data-key="83" class="H note">
+          <p>C(S)</p>
+          <p class="soflege">DO</p>
+        </div>
+        <div class="railup"></div>
       </div>
-      <div data-key="68" class="D note">
-        <p>D</p>
-        <p class="soflege">RE</p>
-      </div>
-      <div data-key="69" class="E note">
-        <p>E</p>
-        <p class="soflege">MI</p>
-      </div>
-      <div data-key="70" class="F note">
-        <p>F</p>
-        <p class="soflege">FA</p>
-      </div>
-      <div data-key="71" class="G note">
-        <p>G</p>
-        <p class="soflege">SO</p>
-      </div>
-      <div data-key="65" class="A note">
-        <p>A</p>
-        <p class="soflege">LA</p>
-      </div>
-      <div data-key="66" class="B note">
-        <p>B</p>
-        <p class="soflege">TI</p>
-      </div>
-      <div data-key="83" class="H note">
-        <p>C(S)</p>
-        <p class="soflege">DO</p>
-      </div>
-      <div class="railup"></div>
-
-    </div>
-
-    <div class="sheetmusic">
-      <h2>Sheet Music</h2>
-      <div class="musicoptions">
-        Play:
-        <select id="jingle">
-          <option value="Select One" selected>Select One</option>
-          <option value="0">Mary Had A Little Lamb</option>
-          <option value="1">Itsy Bitsy Spider</option>
-          <option value="2">Jingle Bells</option>
-          <option value="3">Happy Birthday</option>
-          <option value="4">Twinkle Twinkle Little Star</option>
-        </select>
-      </div>
-      <div id="grid">
-        <div class="scale">
-          <div class="clef">𝄞</div>
-          <div class="notehead Cnh">C</div>
-          <div class="notehead Dnh">D</div>
-          <div class="notehead Enh">E</div>
-          <div class="notehead Fnh">F</div>
-          <div class="notehead Gnh">G</div>
-          <div class="notehead Anh">A</div>
-          <div class="notehead Bnh">B</div>
-          <div class="notehead Snh">C</div>
+      <div class="sheetmusic">
+        <h2 class="close">X</h2>
+        <h2>Sheet Music</h2>
+        <div class="musicoptions">
+          Play:
+          <select id="jingle">
+            <option value="Select One" selected>Select One</option>
+            <option value="0">Mary Had A Little Lamb</option>
+            <option value="1">Itsy Bitsy Spider</option>
+            <option value="2">Jingle Bells</option>
+            <option value="3">Happy Birthday</option>
+            <option value="4">Twinkle Twinkle Little Star</option>
+          </select>
+        </div>
+        <div id="grid">
+          <div class="scale">
+            <div class="clef">𝄞</div>
+            <div class="notehead Cnh">C</div>
+            <div class="notehead Dnh">D</div>
+            <div class="notehead Enh">E</div>
+            <div class="notehead Fnh">F</div>
+            <div class="notehead Gnh">G</div>
+            <div class="notehead Anh">A</div>
+            <div class="notehead Bnh">B</div>
+            <div class="notehead Snh">C</div>
+          </div>
         </div>
       </div>
     </div>
-
     <div class="clearfix"></div>
+    <button class="btnhide"><h2>Sheet Music</h2></div>
     <audio data-key="65">
       <source src="./media/audio/a.mp3" type='audio/mp3'>
       <source src="./media/audio/a.wav" type='audio/wav'>
       <source src="./media/audio/a.ogg" type='audio/ogg; codecs=vorbis'>
+      Sorry your browser does not support the HTML5 audio element.
     </audio>
     <audio data-key="66">
       <source src="./media/audio/b.mp3" type='audio/mp3'>
       <source src="./media/audio/b.wav" type='audio/wav'>
       <source src="./media/audio/b.ogg" type='audio/ogg; codecs=vorbis'>
+      Sorry your browser does not support the HTML5 audio element.
     </audio>
     <audio data-key="67">
       <source src="./media/audio/c.mp3" type='audio/mp3'>
       <source src="./media/audio/c.wav" type='audio/wav'>
       <source src="./media/audio/c.ogg" type='audio/ogg; codecs=vorbis'>
+      Sorry your browser does not support the HTML5 audio element.
     </audio>
     <audio data-key="83">
       <source src="./media/audio/c2.mp3" type='audio/mp3'>
       <source src="./media/audio/c2.wav" type='audio/wav'>
       <source src="./media/audio/c2.ogg" type='audio/ogg; codecs=vorbis'>
+      Sorry your browser does not support the HTML5 audio element.
     </audio>
     <audio data-key="68">
       <source src="./media/audio/d.mp3" type='audio/mp3'>
       <source src="./media/audio/d.wav" type='audio/wav'>
       <source src="./media/audio/d.ogg" type='audio/ogg; codecs=vorbis'>
+      Sorry your browser does not support the HTML5 audio element.
     </audio>
     <audio data-key="69">
       <source src="./media/audio/e.mp3" type='audio/mp3'>
       <source src="./media/audio/e.wav" type='audio/wav'>
       <source src="./media/audio/e.ogg" type='audio/ogg; codecs=vorbis'>
+      Sorry your browser does not support the HTML5 audio element.
     </audio>
     <audio data-key="70">
       <source src="./media/audio/f.mp3" type='audio/mp3'>
       <source src="./media/audio/f.wav" type='audio/wav'>
       <source src="./media/audio/f.ogg" type='audio/ogg; codecs=vorbis'>
+      Sorry your browser does not support the HTML5 audio element.
     </audio>
     <audio data-key="71">
       <source src="./media/audio/g.mp3" type='audio/mp3'>
       <source src="./media/audio/g.wav" type='audio/wav'>
       <source src="./media/audio/g.ogg" type='audio/ogg; codecs=vorbis'>
+      Sorry your browser does not support the HTML5 audio element.
     </audio>
-
     <script type="text/javascript" src="xylophone.js"></script>
 
   </body>

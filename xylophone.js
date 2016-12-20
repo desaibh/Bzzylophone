@@ -178,7 +178,29 @@ function playSheetMusic(e) {
   playNoteLoop(sheet, sheetType, speed, len);
 }
 
+function toggleClose(grid, xyl, btn) {
+  if (btn.className=="btnhide") {
+    grid.classList.add('hide');
+    xyl.classList.add('fullwidth');
+    btn.classList.remove('btnhide');
+    console.log('2',  grid,xyl,btn)
+  } else {
+    grid.classList.remove('hide');
+    xyl.classList.remove('fullwidth');
+    btn.classList.add('btnhide');
+    console.log('3',  grid,xyl,btn)
+  }
+}
+
 const jingles = document.querySelector('#jingle');
 jingles.addEventListener('change', playSheetMusic)
+
+const close = document.querySelector(".close");
+const grid = document.querySelector('.sheetmusic');
+const xyl = document.querySelector('.xylophone');
+const btn = document.querySelector('.btnhide');
+console.log('1',  grid,xyl,btn)
+close.addEventListener('click', () => toggleClose(grid, xyl, btn), false);
+btn.addEventListener('click', () => toggleClose(grid, xyl, btn), false);
 
 window.addEventListener('keydown', keydownHandler);

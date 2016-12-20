@@ -34,16 +34,27 @@ h2 {
   padding: 0;
   margin: 0;
  }
-
+#makemusic {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .xylophone {
   position: relative;
-  display: inline-block;
-  width: 48%;
+  min-width: 350px;
   height: 400px;
   float: left;
   z-index: 1;
   margin: 0 auto;
   align: center;
+  flex: 1;
 }
 .railup, .raildown {
   height: 35px;
@@ -191,18 +202,14 @@ h2 {
   border: 5px yellow solid;
   box-shadow: 0 0 10px yellow;
 }
-.clearfix {
-  clear:both;
-}
 .sheetmusic {
-  display: inline-block;
-  width: 47%;
-  float: right;
-  min-height: 400px;
   line-height: 80px;
+  min-width: 350px;
+  min-height: 300px;
   padding: 10px;
   background: #fb1;
   border: 5px #ed9300 solid;
+  flex: 1;
 }
 .musicoptions {
   line-height: 200%;
@@ -273,22 +280,37 @@ h2 {
   margin: 30px 0 30px 60px;
   line-height: 100%;
 }
+button {
+  background: #fb1;
+  padding: 15px 20px 5px 20px;
+  border-radius: 20px;
+  border: 5px #ed9300 solid;
+  box-shadow: 6px 6px 3px rgba(136, 136, 136, .5);
+
+}
+.clearfix {
+  clear: both;
+}
+.close {
+  text-align: right;
+}
+.hide, .btnhide {
+  display: none;
+}
+.fullwidth {
+  width: 100%;
+  float: none;
+  padding-bottom: 80px;
+}
 @media screen and (max-width: 700px) {
   h1 {
     font-size: 3.5em;
   }
-  .xylophone {
-    float: none;
-    width: 100%;
-    height: 150px;
+  .sheetmusic {
+    margin-top: 40px;
   }
   .railup, .raildown {
     display: none;
-  }
-  .sheetmusic {
-    margin-top: 40px;
-    float: none;
-    width: 90%;
   }
   .soflege {
     border: none;
