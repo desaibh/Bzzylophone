@@ -231,6 +231,7 @@ h2 {
   font-size: 160px;
   line-height: 80px;
   display: inline;
+  font-family: 'segoe ui symbol'; 
 }
 .notehead {
   width: 60px;
