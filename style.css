@@ -228,10 +228,10 @@ h2 {
   );
 }
 .clef {
-  font-size: 160px;
+  font-size: 120px;
   line-height: 80px;
   display: inline;
-  font-family: 'segoe ui symbol'; 
+  font-family: 'segoe ui symbol';
 }
 .notehead {
   width: 60px;
